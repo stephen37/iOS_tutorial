@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WorldTrotter/ConversionViewController.swift"
+            timestampString = "486424617.28131"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "textField(_:s&#x200b;h&#x200b;o&#x200b;u&#x200b;l&#x200b;d&#x200b;C&#x200b;h&#x200b;a&#x200b;n&#x200b;g&#x200b;e&#x200b;C&#x200b;h&#x200b;a&#x200b;r&#x200b;a&#x200b;c&#x200b;t&#x200b;e&#x200b;r&#x200b;s&#x200b;I&#x200b;n&#x200b;R&#x200b;a&#x200b;n&#x200b;g&#x200b;e:replacementString:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
