@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="crf-Lb-L3V">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +34,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDw-hc-Yoy">
                                 <rect key="frame" x="240" y="154" width="119" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0G-kR-s7c">
@@ -42,14 +43,14 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zem-NH-CXP">
-                                <rect key="frame" x="173" y="297" width="254" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="degrees Fahreinheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysR-T0-vgL">
+                                <rect key="frame" x="274.5" y="103" width="313.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahreinheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysR-T0-vgL">
-                                <rect key="frame" x="143" y="103" width="314" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zem-NH-CXP">
+                                <rect key="frame" x="173" y="297" width="254" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -58,15 +59,18 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ysR-T0-vgL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mf-TB-eH5"/>
+                            <constraint firstItem="ysR-T0-vgL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5mf-TB-eH5"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ysR-T0-vgL" secondAttribute="trailingMargin" id="8AI-zn-DxN"/>
                             <constraint firstItem="c0G-kR-s7c" firstAttribute="top" secondItem="FDw-hc-Yoy" secondAttribute="bottom" constant="8" id="CNf-Ms-NAR"/>
                             <constraint firstItem="zem-NH-CXP" firstAttribute="top" secondItem="c0G-kR-s7c" secondAttribute="bottom" constant="8" id="J33-9G-NB6"/>
                             <constraint firstItem="ysR-T0-vgL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="Jbt-xl-vgn"/>
+                            <constraint firstItem="zem-NH-CXP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lz5-GF-iaI"/>
                             <constraint firstItem="ysR-T0-vgL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pkr-Wc-C8Q"/>
                             <constraint firstItem="zem-NH-CXP" firstAttribute="top" secondItem="c0G-kR-s7c" secondAttribute="bottom" constant="8" id="QVf-bR-bu5"/>
                             <constraint firstItem="wxF-ZS-rxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rba-B8-1X8"/>
                             <constraint firstItem="zem-NH-CXP" firstAttribute="top" secondItem="c0G-kR-s7c" secondAttribute="bottom" constant="8" id="Rhl-tu-2Fq"/>
                             <constraint firstItem="ysR-T0-vgL" firstAttribute="top" secondItem="wxF-ZS-rxO" secondAttribute="bottom" constant="8" id="WKP-9Q-YJh"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="zem-NH-CXP" secondAttribute="leadingMargin" id="bk3-4y-OaL"/>
                             <constraint firstItem="wxF-ZS-rxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gWl-yi-2iZ"/>
                             <constraint firstItem="zem-NH-CXP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4Y-x9-Jfb"/>
                             <constraint firstItem="c0G-kR-s7c" firstAttribute="top" secondItem="FDw-hc-Yoy" secondAttribute="bottom" constant="8" id="h8G-Lp-geb"/>
@@ -80,6 +84,7 @@
                             <outletCollection property="gestureRecognizers" destination="OIR-JX-4sP" appends="YES" id="7rY-rh-JYh"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="5iL-ZM-h5A"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="c0G-kR-s7c" id="DZG-kH-eqO"/>
                         <outlet property="textField" destination="wxF-ZS-rxO" id="G1Q-cH-l2A"/>
@@ -92,7 +97,55 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-56" y="192"/>
+            <point key="canvasLocation" x="-428" y="121"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="2e9-6e-mmA">
+            <objects>
+                <viewController id="G3y-7V-fpz" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="L2s-il-d9N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1b-H1-anJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215" y="121"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="For-sX-hdQ">
+            <objects>
+                <viewController id="7it-1f-Gyw" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="wki-cT-4Ze">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                    <tabBarItem key="tabBarItem" title="Web" id="j1b-e4-wmX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYJ-6B-sCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="130"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Plc-Tf-Rdg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="crf-Lb-L3V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Hlx-NA-de2">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="MXu-lq-oGv"/>
+                        <segue destination="G3y-7V-fpz" kind="relationship" relationship="viewControllers" id="GbO-nC-Hix"/>
+                        <segue destination="7it-1f-Gyw" kind="relationship" relationship="viewControllers" id="1Pd-Pa-xfW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HwR-Q5-Fvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="49" height="33"/>
+        <image name="MapIcon" width="49" height="33"/>
+    </resources>
 </document>
